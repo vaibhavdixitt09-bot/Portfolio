@@ -1,1047 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>VAIBHAV DIXIT | Portfolio</title>
+    <title>Vaibhav Dixit | Portfolio</title>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">VD<span>.</span></a>
 
-    <header class="nav">
+            <button class="menu-btn" id="menuBtn">☰</button>
 
-        <a href="#home" class="logo">
-            V<span>D</span>
-        </a>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#courses">Courses</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#achievements">Achievements</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <button id="menu">☰</button>
-
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#courses">Courses</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
 
-    <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
 
-        <!-- ================= HERO SECTION ================= -->
+        <div class="hero-container">
 
-        <section id="home" class="hero">
+            <div class="hero-content reveal">
 
-            <div class="heroText reveal">
-
-                <div class="pill">
-                    ● Aspiring Developer · Problem Solver · Lifelong Learner
+                <div class="badge">
+                    <span>●</span> Aspiring Developer · Problem Solver · Lifelong Learner
                 </div>
 
-                <p class="eyebrow">
-                    Hi, I'm
-                </p>
+                <p class="hello">Hi, I'm</p>
 
                 <h1>
                     Vaibhav <span>Dixit</span>
                 </h1>
 
-                <h2>
-                    B.Tech CSE (AI & ML) Student
-                </h2>
+                <h2>B.Tech CSE (AI & ML) Student</h2>
 
-                <p class="muted">
-                    Passionate about programming, web development and modern
-                    AI technologies. I enjoy building practical projects while
-                    continuously improving my problem-solving skills.
+                <p class="hero-description">
+                    Passionate about building practical solutions through
+                    programming, web development and artificial intelligence.
+                    Always learning, experimenting and improving.
                 </p>
 
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View My Work →</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
 
-                <div class="buttons">
-
-                    <a class="btn primary" href="#projects">
-                        View My Work →
+                <div class="social-links">
+                    <a href="https://github.com/vaibhavdixit09-bot" target="_blank">
+                        GitHub
                     </a>
 
-                    <a class="btn" href="#contact">
-                        Contact Me ✉
+                    <a href="https://www.linkedin.com/in/vaibhav-dixit-25b601266" target="_blank">
+                        LinkedIn
                     </a>
-
-                </div>
-
-
-                <div class="social">
-
-                    <a href="https://github.com/vaibhavdixit09-bot"
-                        target="_blank">
-                        GitHub ↗
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/vaibhav-dixit-25b601266"
-                        target="_blank">
-                        LinkedIn ↗
-                    </a>
-
                 </div>
 
             </div>
 
 
-            <!-- CODE CARD -->
+            <!-- PROFILE PHOTO -->
+            <div class="hero-visual reveal">
 
-            <div class="visual reveal">
+                <div class="photo-glow"></div>
 
-                <div class="glow"></div>
+                <div class="profile-card">
 
-                <div class="code">
-
-                    <div class="codebar">
-
-                        <i></i>
-                        <i></i>
-                        <i></i>
-
-                        <span>
-                            portfolio.js
-                        </span>
-
+                    <div class="profile-top">
+                        <span class="status-dot"></span>
+                        <span>AVAILABLE TO LEARN & BUILD</span>
                     </div>
 
+                    <div class="profile-image-wrapper">
+                        <img
+                            src="profile.jpg"
+                            alt="Vaibhav Dixit"
+                            class="profile-image"
+                        >
+                    </div>
 
-                    <pre><span>const</span> developer = {
+                    <div class="profile-info">
+                        <h3>Vaibhav Dixit</h3>
+                        <p>CSE (AI & ML) Student</p>
+                    </div>
 
-  name: <b>"Vaibhav Dixit"</b>,
-
-  role: <b>"CSE (AI & ML)"</b>,
-
-  skills: [
-    <b>"C++"</b>,
-    <b>"Python"</b>,
-    <b>"JavaScript"</b>,
-    <b>"React.js"</b>
-  ],
-
-  focus: <b>"Build & Learn"</b>
-
-};</pre>
+                    <div class="profile-tags">
+                        <span>AI & ML</span>
+                        <span>Web Dev</span>
+                        <span>DSA</span>
+                    </div>
 
                 </div>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
 
-        <!-- ================= ABOUT ================= -->
+            <div class="section-heading reveal">
+                <span>01 — ABOUT ME</span>
+                <h2>Building. Learning. Improving.</h2>
+            </div>
 
-        <section id="about" class="section">
+            <div class="about-grid">
 
-            <div class="heading">
+                <div class="about-text reveal">
+                    <p>
+                        I am a B.Tech Computer Science Engineering student
+                        specializing in Artificial Intelligence & Machine Learning
+                        at Lovely Professional University.
+                    </p>
 
-                <small>
-                    01
-                </small>
+                    <p>
+                        I enjoy solving problems, developing web applications
+                        and exploring technologies related to AI and software
+                        development.
+                    </p>
+                </div>
+
+                <div class="stats-grid reveal">
+
+                    <div class="stat-card">
+                        <h3>8.84</h3>
+                        <p>Current CGPA</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>100+</h3>
+                        <p>DSA Problems</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>3</h3>
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>3</h3>
+                        <p>Certifications</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span>02 — SKILLS</span>
+                <h2>My Technical Toolkit</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <h3>Languages</h3>
+                    <div class="tags">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <h3>Web Technologies</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="tags">
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <h3>Databases</h3>
+                    <div class="tags">
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <h3>Tools & Platforms</h3>
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <h3>Soft Skills</h3>
+                    <div class="tags">
+                        <span>Teamwork</span>
+                        <span>Problem Solving</span>
+                        <span>Communication</span>
+                        <span>Adaptability</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span>03 — PROJECTS</span>
+                <h2>Things I've Built</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-number">01</div>
+
+                    <p class="project-date">DEC 2025</p>
+
+                    <h3>Expense Tracker</h3>
+
+                    <p>
+                        Responsive web application with dynamic expense
+                        calculation, filtering and deletion features using
+                        LocalStorage.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">GitHub ↗</a>
+                        <a href="#" target="_blank">Live ↗</a>
+                    </div>
+                </div>
+
+
+                <div class="project-card reveal">
+                    <div class="project-number">02</div>
+
+                    <p class="project-date">JUL 2025</p>
+
+                    <h3>Student Management System</h3>
+
+                    <p>
+                        Console-based C++ system for creating, updating,
+                        searching and managing student records using
+                        programming fundamentals.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>MongoDB</span>
+                        <span>Tailwind CSS</span>
+                        <span>RESTful APIs</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">GitHub ↗</a>
+                        <a href="#" target="_blank">Live ↗</a>
+                    </div>
+                </div>
+
+
+                <div class="project-card reveal">
+                    <div class="project-number">03</div>
+
+                    <p class="project-date">MAR 2025</p>
+
+                    <h3>Quiz Applications</h3>
+
+                    <p>
+                        Interactive quiz application with multiple-choice
+                        questions, navigation, validation and score tracking.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>MongoDB</span>
+                        <span>Google Gemini API</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank">GitHub ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COURSES -->
+    <section id="courses" class="section">
+        <div class="container">
+
+            <div class="section-heading reveal">
+                <span>04 — COURSES</span>
+                <h2>Continuous Learning</h2>
+            </div>
+
+            <div class="course-card reveal">
 
                 <div>
-
-                    <p class="eyebrow">
-                        Get to know me
-                    </p>
-
-                    <h2>
-                        About <em>Me</em>
-                    </h2>
-
+                    <p class="small-label">JUN 2025 – AUG 2025</p>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Apna-College</p>
                 </div>
-
-            </div>
-
-
-            <div class="aboutGrid">
-
-
-                <div class="card about">
-
-                    <h3>
-                        Building. Learning. Improving.
-                    </h3>
-
-                    <p>
-                        I'm Vaibhav Dixit, a B.Tech Computer Science and
-                        Engineering (AI & ML) student at Lovely Professional
-                        University.
-                    </p>
-
-                    <p>
-                        I have a strong interest in programming, full-stack
-                        web development and Artificial Intelligence.
-                    </p>
-
-                    <p>
-                        I like turning ideas into working projects and
-                        strengthening my fundamentals through coding and
-                        Data Structures & Algorithms practice.
-                    </p>
-
-                </div>
-
-
-                <div class="stats">
-
-                    <div>
-                        <b>8.84</b>
-                        <span>Current CGPA</span>
-                    </div>
-
-                    <div>
-                        <b>100+</b>
-                        <span>DSA Problems</span>
-                    </div>
-
-                    <div>
-                        <b>3</b>
-                        <span>Projects</span>
-                    </div>
-
-                    <div>
-                        <b>3</b>
-                        <span>Certifications</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills" class="section">
-
-            <div class="heading">
-
-                <small>
-                    02
-                </small>
-
-                <div>
-
-                    <p class="eyebrow">
-                        What I work with
-                    </p>
-
-                    <h2>
-                        My <em>Skills</em>
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="skills">
-
-
-                <!-- Languages -->
-
-                <article class="card">
-
-                    <strong>
-                        ⌘
-                    </strong>
-
-                    <h3>
-                        Languages
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>C</i>
-                        <i>C++</i>
-                        <i>Python</i>
-                        <i>Java</i>
-                        <i>JavaScript</i>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Web Technologies -->
-
-                <article class="card">
-
-                    <strong>
-                        &lt;/&gt;
-                    </strong>
-
-                    <h3>
-                        Web Technologies
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>HTML</i>
-                        <i>CSS</i>
-                        <i>JavaScript</i>
-                        <i>React.js</i>
-                        <i>Node.js</i>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Frameworks -->
-
-                <article class="card">
-
-                    <strong>
-                        ◈
-                    </strong>
-
-                    <h3>
-                        Frameworks & Libraries
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>Bootstrap</i>
-                        <i>Tailwind CSS</i>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Databases -->
-
-                <article class="card">
-
-                    <strong>
-                        ▣
-                    </strong>
-
-                    <h3>
-                        Databases
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>MongoDB</i>
-                        <i>PostgreSQL</i>
-                        <i>MySQL</i>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Tools -->
-
-                <article class="card">
-
-                    <strong>
-                        ⚙
-                    </strong>
-
-                    <h3>
-                        Tools & Platforms
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>Git</i>
-                        <i>GitHub</i>
-                        <i>VS Code</i>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Soft Skills -->
-
-                <article class="card">
-
-                    <strong>
-                        ✦
-                    </strong>
-
-                    <h3>
-                        Soft Skills
-                    </h3>
-
-                    <div class="chips">
-
-                        <i>Teamwork</i>
-                        <i>Problem Solving</i>
-                        <i>Communication</i>
-                        <i>Adaptability</i>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section id="projects" class="section">
-
-            <div class="heading">
-
-                <small>
-                    03
-                </small>
-
-                <div>
-
-                    <p class="eyebrow">
-                        Things I've built
-                    </p>
-
-                    <h2>
-                        Featured <em>Projects</em>
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="projects">
-
-
-                <!-- PROJECT 1 -->
-
-                <article class="project card">
-
-                    <span class="date">
-                        Dec 2025
-                    </span>
-
-                    <small>
-                        01
-                    </small>
-
-                    <h3>
-                        Expense Tracker
-                    </h3>
-
-                    <p>
-                        Developed a responsive web application to record,
-                        categorize and manage daily expenses.
-                    </p>
-
-
-                    <ul>
-
-                        <li>
-                            Dynamic expense calculation, category-wise
-                            filtering and expense deletion.
-                        </li>
-
-                        <li>
-                            LocalStorage to persist user data across
-                            browser sessions.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="chips">
-
-                        <i>HTML</i>
-                        <i>CSS</i>
-                        <i>JavaScript</i>
-                        <i>LocalStorage</i>
-
-                    </div>
-
-
-                    <div class="links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 2 -->
-
-                <article class="project card">
-
-                    <span class="date">
-                        Jul 2025
-                    </span>
-
-                    <small>
-                        02
-                    </small>
-
-                    <h3>
-                        Student Management System
-                    </h3>
-
-                    <p>
-                        Developed a console-based student management
-                        system using C++.
-                    </p>
-
-
-                    <ul>
-
-                        <li>
-                            Adding, updating, deleting and searching
-                            student records.
-                        </li>
-
-                        <li>
-                            Applied arrays, functions, loops and basic
-                            Object-Oriented Programming concepts.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="chips">
-
-                        <i>C++</i>
-
-                    </div>
-
-
-                    <div class="links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                        <a href="#">
-                            Live ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 3 -->
-
-                <article class="project card">
-
-                    <span class="date">
-                        Mar 2025
-                    </span>
-
-                    <small>
-                        03
-                    </small>
-
-                    <h3>
-                        Quiz Applications
-                    </h3>
-
-                    <p>
-                        Built an interactive quiz application with
-                        multiple-choice questions and instant score
-                        calculation.
-                    </p>
-
-
-                    <ul>
-
-                        <li>
-                            Question navigation, answer validation and
-                            final score generation.
-                        </li>
-
-                        <li>
-                            Responsive and user-friendly interface.
-                        </li>
-
-                    </ul>
-
-
-                    <div class="chips">
-
-                        <i>HTML</i>
-                        <i>CSS</i>
-                        <i>JavaScript</i>
-                        <i>MongoDB</i>
-                        <i>Google Gemini API</i>
-
-                    </div>
-
-
-                    <div class="links">
-
-                        <a href="#">
-                            GitHub ↗
-                        </a>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= COURSES ================= -->
-
-        <section id="courses" class="section">
-
-            <div class="heading">
-
-                <small>
-                    04
-                </small>
-
-                <div>
-
-                    <p class="eyebrow">
-                        Learning journey
-                    </p>
-
-                    <h2>
-                        Courses & <em>Training</em>
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="card course">
-
-                <span class="date">
-                    Jun 2025 – Aug 2025
-                </span>
-
-                <h3>
-                    Full Stack Web Development
-                    <em>| Apna College</em>
-                </h3>
 
                 <p>
-                    • Learned frontend development using HTML, CSS and
-                    JavaScript.
-                </p>
-
-                <p>
-                    • Explored React.js, Node.js, Express.js and MongoDB.
-                </p>
-
-                <p>
-                    • Practiced building responsive websites and basic
-                    full-stack applications.
+                    Learned frontend development using HTML, CSS and JavaScript,
+                    along with React, Node, Express and MongoDB.
                 </p>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+        <div class="container">
 
-        <!-- ================= CERTIFICATIONS ================= -->
+            <div class="section-heading reveal">
+                <span>05 — CERTIFICATIONS</span>
+                <h2>What I've Learned</h2>
+            </div>
 
-        <section id="certifications" class="section">
+            <div class="cert-grid">
 
-            <div class="heading">
+                <div class="cert-card reveal">
+                    <p>DEC 2025</p>
+                    <h3>Introduction to Artificial Intelligence</h3>
+                    <span>Infosys Springboard</span>
+                </div>
 
-                <small>
-                    05
-                </small>
+                <div class="cert-card reveal">
+                    <p>JAN 2026</p>
+                    <h3>Introduction to Modern AI</h3>
+                    <span>Infosys Springboard</span>
+                </div>
 
-                <div>
-
-                    <p class="eyebrow">
-                        Credentials
-                    </p>
-
-                    <h2>
-                        My <em>Certifications</em>
-                    </h2>
-
+                <div class="cert-card reveal">
+                    <p>JUL 2026</p>
+                    <h3>Full Stack Web Development</h3>
+                    <span>Apna College</span>
                 </div>
 
             </div>
 
+        </div>
+    </section>
 
-            <div class="card list">
 
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <div class="container">
 
-                <div>
+            <div class="section-heading reveal">
+                <span>06 — ACHIEVEMENTS</span>
+                <h2>Progress That Matters</h2>
+            </div>
 
-                    <span>
-                        Introduction to Artificial Intelligence
+            <div class="achievement-list">
 
-                        <small>
-                            Infosys Springboard
-                        </small>
-                    </span>
-
-                    <time>
-                        Dec 2025
-                    </time>
-
+                <div class="achievement reveal">
+                    <strong>01</strong>
+                    <div>
+                        <h3>100+ DSA Problems</h3>
+                        <p>Solved on LeetCode.</p>
+                    </div>
                 </div>
 
-
-                <div>
-
-                    <span>
-                        Introduction to Modern AI
-
-                        <small>
-                            Infosys Springboard
-                        </small>
-                    </span>
-
-                    <time>
-                        Jan 2026
-                    </time>
-
+                <div class="achievement reveal">
+                    <strong>02</strong>
+                    <div>
+                        <h3>Consistent Coding Practice</h3>
+                        <p>Maintaining daily and weekly coding practice.</p>
+                    </div>
                 </div>
 
-
-                <div>
-
-                    <span>
-                        Full Stack Web Development
-
-                        <small>
-                            Apna College
-                        </small>
-                    </span>
-
-                    <time>
-                        Jul 2026
-                    </time>
-
+                <div class="achievement reveal">
+                    <strong>03</strong>
+                    <div>
+                        <h3>Multiple Technical Courses</h3>
+                        <p>Completed multiple technical courses and certifications.</p>
+                    </div>
                 </div>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <div class="container">
 
-        <!-- ================= ACHIEVEMENTS ================= -->
+            <div class="section-heading reveal">
+                <span>07 — EDUCATION</span>
+                <h2>Academic Journey</h2>
+            </div>
 
-        <section id="achievements" class="section">
+            <div class="timeline">
 
-            <div class="heading">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p>Aug 2025 – Present</p>
+                    <h3>Lovely Professional University</h3>
+                    <h4>B.Tech CSE</h4>
+                    <span>CGPA: 8.84 · Phagwara, Punjab</span>
+                </div>
 
-                <small>
-                    06
-                </small>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p>Apr 2024 – Mar 2025</p>
+                    <h3>Ambika Prasad Memorial Public School.</h3>
+                    <h4>Intermediate</h4>
+                    <span>Percentage: 81 · Kanpur, UP</span>
+                </div>
 
-                <div>
-
-                    <p class="eyebrow">
-                        Milestones
-                    </p>
-
-                    <h2>
-                        My <em>Achievements</em>
-                    </h2>
-
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <p>Apr 2022 – Mar 2023</p>
+                    <h3>Ambika Prasad Memorial Public School.</h3>
+                    <h4>High School</h4>
+                    <span>Percentage: 92.2 · Kanpur, UP</span>
                 </div>
 
             </div>
 
-
-            <div class="card list">
-
-
-                <div>
-
-                    <span>
-                        Solved 100+ Data Structures and Algorithms
-                        problems on LeetCode
-                    </span>
-
-                    <time>
-                        Aug 2026
-                    </time>
-
-                </div>
+        </div>
+    </section>
 
 
-                <div>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
 
-                    <span>
-                        Maintained a consistent daily/weekly coding
-                        practice to strengthen problem-solving and
-                        algorithmic skills
-                    </span>
+            <div class="section-heading reveal">
+                <span>08 — CONTACT</span>
+                <h2>Let's Build Something Together.</h2>
+            </div>
 
-                    <time>
-                        Aug 2026
-                    </time>
+            <div class="contact-card reveal">
 
-                </div>
+                <a href="mailto:vaibhavdixitt09@gmail.com">
+                    <span>Email</span>
+                    <strong>vaibhavdixitt09@gmail.com</strong>
+                </a>
 
+                <a href="tel:+919118785959">
+                    <span>Mobile</span>
+                    <strong>+91-9118785959</strong>
+                </a>
 
-                <div>
+                <a href="https://github.com/vaibhavdixit09-bot" target="_blank">
+                    <span>GitHub</span>
+                    <strong>github.com/vaibhavdixit09-bot</strong>
+                </a>
 
-                    <span>
-                        Completed multiple technical courses and
-                        certifications in AI, programming and full-stack
-                        web development
-                    </span>
-
-                    <time>
-                        Jul 2026
-                    </time>
-
-                </div>
+                <a href="https://www.linkedin.com/in/vaibhav-dixit-25b601266" target="_blank">
+                    <span>LinkedIn</span>
+                    <strong>linkedin.com/in/vaibhav-dixit-25b601266</strong>
+                </a>
 
             </div>
 
-        </section>
+        </div>
+    </section>
 
 
-
-        <!-- ================= EDUCATION ================= -->
-
-        <section id="education" class="section">
-
-            <div class="heading">
-
-                <small>
-                    07
-                </small>
-
-                <div>
-
-                    <p class="eyebrow">
-                        Academic background
-                    </p>
-
-                    <h2>
-                        My <em>Education</em>
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-            <div class="card education">
-
-
-                <!-- University -->
-
-                <div>
-
-                    <b>
-                        🎓
-                    </b>
-
-                    <span>
-
-                        <strong>
-                            Lovely Professional University
-                        </strong>
-
-                        <small>
-                            Bachelor of Technology - Computer Science
-                            and Engineering; CGPA: 8.84
-                        </small>
-
-                    </span>
-
-                    <time>
-                        Phagwara, Punjab
-                        <br>
-                        Aug 2025 – Present
-                    </time>
-
-                </div>
-
-
-                <!-- 12th -->
-
-                <div>
-
-                    <b>
-                        🎓
-                    </b>
-
-                    <span>
-
-                        <strong>
-                            Ambika Prasad Memorial Public School
-                        </strong>
-
-                        <small>
-                            Intermediate; Percentage: 81
-                        </small>
-
-                    </span>
-
-                    <time>
-                        Kanpur, Uttar Pradesh
-                        <br>
-                        Apr 2024 – Mar 2025
-                    </time>
-
-                </div>
-
-
-                <!-- 10th -->
-
-                <div>
-
-                    <b>
-                        🎓
-                    </b>
-
-                    <span>
-
-                        <strong>
-                            Ambika Prasad Memorial Public School
-                        </strong>
-
-                        <small>
-                            High School; Percentage: 92.2
-                        </small>
-
-                    </span>
-
-                    <time>
-                        Kanpur, Uttar Pradesh
-                        <br>
-                        Apr 2022 – Mar 2023
-                    </time>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= CONTACT ================= -->
-
-        <section id="contact" class="section">
-
-            <div class="contact card">
-
-                <div>
-
-                    <p class="eyebrow">
-                        Have a project or opportunity?
-                    </p>
-
-                    <h2>
-                        Let's <em>Connect.</em>
-                    </h2>
-
-                    <p class="muted">
-                        I'm always open to learning, building and
-                        exploring new opportunities.
-                    </p>
-
-                </div>
-
-
-                <div class="contactLinks">
-
-                    <a href="mailto:vaibhavdixit09@gmail.com">
-                        ✉ vaibhavdixit09@gmail.com
-                    </a>
-
-                    <a href="tel:+919118785959">
-                        ☎ +91 9118785959
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/vaibhav-dixit-25b601266"
-                        target="_blank">
-                        in LinkedIn Profile ↗
-                    </a>
-
-                    <a href="https://github.com/vaibhavdixit09-bot"
-                        target="_blank">
-                        ⌘ GitHub Profile ↗
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- ================= FOOTER ================= -->
-
+    <!-- FOOTER -->
     <footer>
-
-        © 2026 Vaibhav Dixit ·
-        Designed & Built with
-        <span>♥</span>
-
+        <p>© <span id="year"></span> Vaibhav Dixit. Built with curiosity & code.</p>
     </footer>
 
 
-
-    <!-- BACK TO TOP BUTTON -->
-
-    <button id="top">
-        ↑
-    </button>
-
-
-    <!-- JavaScript -->
+    <button id="backToTop">↑</button>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>
